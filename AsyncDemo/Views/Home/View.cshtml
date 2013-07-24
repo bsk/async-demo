@@ -1,0 +1,12 @@
+﻿@model dynamic
+
+<div>Elapsed time: @Html.Encode(ViewBag.elapsedTime)</div>
+<br/>
+<div>@Model.Length links found:</div>
+
+<ol>
+    @foreach (var id in @Model)
+    {
+        <li>@id</li>
+    }
+</ol>
